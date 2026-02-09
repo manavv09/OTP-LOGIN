@@ -273,3 +273,120 @@ input::-webkit-inner-spin-button {
   cursor: not-allowed;
   transform: none;
 }
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make main app card fit */
+.App {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  /* Main container */
+  .App {
+    padding: 18px !important;
+    margin: 0 !important;
+  }
+
+  /* All headings smaller */
+  h1 {
+    font-size: 26px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  /* Phone form stack */
+  form {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 12px !important;
+  }
+
+  form input {
+    width: 100% !important;
+    box-sizing: border-box;
+    font-size: 15px !important;
+    padding: 14px 14px !important;
+  }
+
+  form button,
+  button {
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+  }
+
+  /* OTP boxes responsive */
+  .otpWrap {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .otpInput {
+    width: 52px !important;
+    height: 52px !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+  }
+
+  /* Resend row stack */
+  .resendRow {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .resendBtn {
+    width: 100% !important;
+    max-width: 260px !important;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+
+  .otpWrap {
+    gap: 8px !important;
+  }
+
+  .otpInput {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 18px !important;
+  }
+
+  h1 {
+    font-size: 22px !important;
+  }
+}
+
+
+  .verifyBtn {
+    width: 100%;
+    max-width: 260px;
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+
+  .resendWrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resendBtn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
