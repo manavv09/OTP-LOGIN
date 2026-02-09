@@ -31,7 +31,7 @@ function PhoneOtpForm() {
     console.log("OTP entered:", otp);
 };
 
-  // ✅ Timer logic
+  //  Timer logic
     useEffect(() => {
     if (!showOtpInput) return;
 
@@ -44,7 +44,7 @@ function PhoneOtpForm() {
     return () => clearInterval(interval);
 }, [timer, showOtpInput]);
 
-  // ✅ Resend OTP
+  //  Resend OTP
     const handleResendOtp = () => {
     if (timer > 0) return;
 
